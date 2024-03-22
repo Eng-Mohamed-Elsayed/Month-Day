@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class Solve {
     public static void main(String[] args) {
+        /*
+           TODO: ( mai and mohamed)
+             - using scanner just one
+         */
         System.out.println(getNameDay());
         System.out.println(getNameMonth());
     }//main
