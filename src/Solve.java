@@ -2,12 +2,13 @@ import java.util.Scanner;
 
 public class Solve {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         /*
            TODO: ( mai and mohamed)
              - using scanner just one
          */
-        System.out.println(getNameDay());
-        System.out.println(getNameMonth());
+        System.out.println(getNameDay(scanner));
+        System.out.println(getNameMonth(scanner));
     }//main
 
     /*
@@ -17,8 +18,8 @@ public class Solve {
            - condition using  switch
            - return method String
        */
-    public static String getNameMonth() {
-        Scanner scanner = new Scanner(System.in);
+    public static String getNameMonth(Scanner scanner) {
+
         System.out.printf("enter month 1 to 12:");
         int numberMonth = scanner.nextInt();
         return switch (numberMonth) {
@@ -47,8 +48,8 @@ public class Solve {
                - return method String
          */
 
-    public static String getNameDay() {
-        Scanner scanner = new Scanner(System.in);
+    public static String getNameDay(Scanner scanner) {
+
         System.out.printf("enter number 1 to 7:");
         int numberDay = scanner.nextInt();
 
