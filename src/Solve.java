@@ -2,15 +2,8 @@ import java.util.Scanner;
 
 public class Solve {
     public static void main(String[] args) {
-
-
-        /*
-           TODO: (Mohamed)
-               - create method (getNameDay) return day
-               - read number day form user (Scanner)
-               - condition using  switch
-               - return method String
-         */
+        System.out.println(getNameDay());
+        System.out.println(getNameMonth());
     }//main
 
     /*
@@ -22,7 +15,7 @@ public class Solve {
        */
     public static String getNameMonth() {
         Scanner scanner = new Scanner(System.in);
-        System.out.printf("enter month 1 to 12");
+        System.out.printf("enter month 1 to 12:");
         int numberMonth = scanner.nextInt();
         return switch (numberMonth) {
             case 1 -> "January";
@@ -42,5 +35,30 @@ public class Solve {
 
     } // getNameMonth
 
+    /*
+           TODO: (Mohamed)
+               - create method (getNameDay) return day
+               - read number day form user (Scanner)
+               - condition using  switch
+               - return method String
+         */
+
+    public static String getNameDay() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.printf("enter number 1 to 7:");
+        int numberDay = scanner.nextInt();
+
+        return switch (numberDay) {
+            case 1 -> "Monday";
+            case 2 -> "Tuesday";
+            case 3 -> "Wednesday";
+            case 4 -> "Thursday";
+            case 5 -> "Friday";
+            case 6 -> "Saturday";
+            case 7 -> "Sunday";
+            default -> "Invalid Value";
+        };
+
+    }
 
 }// class
